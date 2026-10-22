@@ -1,0 +1,243 @@
+/* ========================================================
+   TURTLE INC - ESTILOS GLOBALES Y COMUNES
+   ======================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Luckiest Guy', cursive;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1 0 auto;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #FFD700, #81C784);
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Barra de navegación */
+.navbar {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #222;
+  padding: 12px 25px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.container-fluid {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+  letter-spacing: 0.5px;
+}
+
+.navbar-brand:hover {
+  color: #ffd000;
+}
+
+.navbar-collapse {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-item {
+  margin-left: 5px;
+}
+
+.nav-link {
+  color: white !important;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: 0.3s;
+  font-size: 0.95rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffc107 !important;
+}
+
+/* Búsqueda */
+.busqueda {
+  display: flex;
+  align-items: center;
+}
+
+.busqueda input {
+  width: 190px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  font-size: 14px;
+  font-family: inherit;
+  background-color: #fff;
+}
+
+.busqueda button {
+  padding: 8px 14px;
+  border: none;
+  background: #ffd000;
+  color: black;
+  cursor: pointer;
+  border-radius: 0 20px 20px 0;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.busqueda button:hover {
+  background: #ffb700;
+  transform: scale(1.05);
+}
+
+/* Carrito */
+.boton-carrito {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  padding: 6px 10px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: 0.3s;
+  position: relative;
+  cursor: pointer;
+  border: none;
+}
+
+.boton-carrito:hover {
+  background-color: #ffd000;
+  transform: scale(1.1);
+}
+
+.carrito-badge {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  background: #e53935;
+  color: white;
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Botón Volver genérico */
+.volver {
+  display: inline-block;
+  margin: 20px 40px;
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.volver:hover {
+  color: #81C784;
+  transform: translateX(-3px);
+}
+
+/* Responsive Navbar */
+@media (max-width: 860px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .container-fluid {
+    justify-content: center;
+  }
+
+  .navbar-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .busqueda input {
+    width: 140px;
+  }
+}

@@ -1,0 +1,168 @@
+/* ========================================================
+   TURTLE INC - ESTILOS DE AUTENTICACIÓN
+   (Login, Registro, Olvido y Cambio de Contraseña)
+   ======================================================== */
+
+.auth-page-container {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/* Card de Login y Recuperación */
+.dropdown-menu-auth {
+  background: white;
+  width: 100%;
+  max-width: 380px;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+.auth-title {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 1.8rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #FFB300, #4CAF50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.auth-label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+}
+
+.form-control-auth {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control-auth:focus {
+  outline: none;
+  border-color: #81C784;
+  box-shadow: 0 0 5px rgba(129, 199, 132, 0.5);
+}
+
+.form-check-auth {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+  font-size: 14px;
+  color: #555;
+}
+
+.form-check-auth input {
+  cursor: pointer;
+}
+
+.btn-auth {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to bottom, #FFEB3B, #81C784);
+  color: #111;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.2s, filter 0.2s;
+}
+
+.btn-auth:hover {
+  filter: brightness(0.95);
+  transform: translateY(-1px);
+}
+
+.auth-divider {
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 18px 0;
+}
+
+.auth-link {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #2e7d32;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+  color: #1b5e20;
+}
+
+/* Card de Registro de Usuario */
+.registro-card {
+  background: white;
+  width: 100%;
+  max-width: 480px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+.registro-card h1 {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 2rem;
+  margin: 0 0 5px 0;
+  text-align: center;
+  color: #333;
+}
+
+.registro-card .subtitulo {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.registro-card .terminos {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 15px 0 20px 0;
+  font-size: 13px;
+  color: #555;
+}
+
+.registro-card .login-prompt {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 14px;
+  color: #666;
+}
+
+.registro-card .login-prompt a {
+  color: #2e7d32;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.registro-card .login-prompt a:hover {
+  text-decoration: underline;
+}

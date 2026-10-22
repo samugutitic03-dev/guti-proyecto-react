@@ -1,0 +1,183 @@
+/* ========================================================
+   TURTLE INC - ESTILOS DE CARRITO DE COMPRAS
+   ======================================================== */
+
+.carrito-page {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.carrito-page h2 {
+  font-size: 26px;
+  margin: 15px 0 25px 0;
+  color: #222;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 12px;
+}
+
+.producto-carrito {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 20px 0;
+  gap: 15px;
+}
+
+.producto-carrito img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.producto-info {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.producto-info h3 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  color: #222;
+}
+
+.producto-info p {
+  margin: 0 0 4px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.producto-info .talla-badge {
+  display: inline-block;
+  background: #eee;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #333;
+}
+
+.producto-carrito .precio {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2e7d32;
+  min-width: 100px;
+  text-align: right;
+}
+
+.cantidad {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cantidad button {
+  width: 32px;
+  height: 32px;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+
+.cantidad button:hover {
+  background: #222;
+  color: white;
+}
+
+.cantidad span {
+  font-size: 16px;
+  font-weight: bold;
+  min-width: 25px;
+  text-align: center;
+}
+
+.eliminar {
+  background: #ffebee;
+  color: #c62828;
+  border: 1px solid #ffcdd2;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+
+.eliminar:hover {
+  background: #c62828;
+  color: white;
+}
+
+.total-seccion {
+  text-align: right;
+  font-size: 22px;
+  margin-top: 30px;
+  padding-top: 15px;
+  color: #222;
+}
+
+.total-seccion strong {
+  color: #2e7d32;
+  font-size: 26px;
+  margin-left: 10px;
+}
+
+.comprar {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(90deg, #FFD700, #81C784);
+  color: #111;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 25px;
+  font-family: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.comprar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.carrito-vacio {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.carrito-vacio p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .producto-carrito {
+    flex-wrap: wrap;
+  }
+  .producto-carrito .precio {
+    text-align: left;
+  }
+}

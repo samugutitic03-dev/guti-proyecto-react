@@ -1,0 +1,132 @@
+/* ========================================================
+   TURTLE INC - ESTILOS DE CAPARAZONES Y RECOMPENSAS
+   ======================================================== */
+
+.contenedor-caparazones {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 1050px;
+  margin: 50px auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.card-caparazones {
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  flex: 1;
+  min-width: 320px;
+  text-align: center;
+}
+
+.card-caparazones h2 {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #81C784;
+  padding-bottom: 10px;
+}
+
+.card-caparazones p {
+  color: #555;
+  line-height: 1.7;
+  font-size: 16px;
+  margin: 12px 0;
+}
+
+.recompensa-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9fbf9;
+  border: 1px solid #e0ede2;
+  padding: 12px 20px;
+  border-radius: 10px;
+  margin: 12px 0;
+  font-size: 16px;
+}
+
+.recompensa-item span.puntos {
+  background: #81C784;
+  color: white;
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+/* Modal Canje (caparazones2) */
+.modal-canje-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-canje-card {
+  background: white;
+  padding: 35px 30px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.85); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.modal-icono {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.modal-subtitulo {
+  color: #81C784;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.modal-titulo {
+  font-size: 24px;
+  color: #222;
+  margin: 10px 0;
+}
+
+.modal-texto {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.btn-aceptar {
+  background: linear-gradient(90deg, #FFD700, #81C784);
+  color: #111;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: inherit;
+  transition: 0.2s;
+}
+
+.btn-aceptar:hover {
+  transform: scale(1.05);
+}
